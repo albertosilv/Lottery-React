@@ -1,16 +1,11 @@
 import styled from "styled-components"
 export const Container = styled.div`
-flex:1;
-width:50vw;
-height:100vh;
-padding:50px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding:100px;
+    justify-content:space-around;
+    align-items:center;
 ` 
-
-export const Card = styled.div`
-width:20vw;
-height:50vh;
-border-radius:20px;
-background-color:#fff;
-box-shadow: 0 0 0.7em #777;
-padding:50px;
-` 
+export const Column = styled.div`
+`

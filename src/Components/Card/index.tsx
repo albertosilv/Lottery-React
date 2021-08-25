@@ -1,8 +1,10 @@
 import React from 'react'
-import {Card} from './styles'
-const CardContainer:React.FC=({children})=>{
-    return(
-        <Card>{children}</Card>
+import { Card, Container } from './styles'
+const CardContainer: React.FC = ({ children }) => {
+    return (
+        <Container>
+            <Card>{children}</Card>
+        </Container>
     )
 }
 export default CardContainer;

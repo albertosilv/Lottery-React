@@ -1,4 +1,7 @@
 import styled from "styled-components"
+export const Container = styled.div`
+margin:10px;
+`;
 export const Card = styled.div`
 width:20vw;
 height:50vh;
