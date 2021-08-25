@@ -4,9 +4,8 @@ margin:10px;
 `;
 export const Card = styled.div`
 width:20vw;
-height:50vh;
 border-radius:20px;
 background-color:#fff;
-box-shadow: 0 0 0.7em #777;
-padding:30px 1px;
+box-shadow: 0 0 0.3em #777;
+padding:40px 0px 20px 1px;
 ` 

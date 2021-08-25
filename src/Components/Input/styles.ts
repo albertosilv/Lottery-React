@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
             font-style: italic;
             letter-spacing: .1rem;
             font-size:15px;
+            padding-left:10px;
         }
 	}
 `;

@@ -1,10 +1,36 @@
 import React from 'react'
+import { Container, Column, Reset, ResetContainer } from './styles'
+import Card from '../../Components/Card'
+import Input from '../../Components/Input'
+import Lottery from '../../Components/Lottery'
+import TitlePage from '../../Components/TitlePage'
+import ButtonLInk from '../../Components/ButtonLink'
+import { useHistory } from 'react-router-dom'
+const Login: React.FC = () => {
+    const history = useHistory()
+    function handle(element: string) {
+        console.log(element)
+    }
+    return (
+        <Container>
+            <Column>
+                <Lottery />
+            </Column>
+            <Column>
+                <TitlePage>Login</TitlePage>
+                <Card>
+                    <Input placeholder="Email" onChange={handle} />
+                    <Input placeholder="Password" onChange={handle} />
+                    <ResetContainer>
+                        <Reset onClick={(e) => history.push('/resetPassword')}>I forget my password</Reset>
+                    </ResetContainer>
+                    <ButtonLInk name='Log in' direction={true} to='/game' color='#b5c401' />
+                </Card>
+                <ButtonLInk name='Sign up' direction={true} to='/registration' color='#707070' />
+            </Column>
 
-const Login:React.FC=()=>{
-
-    return(
-        <h1>Login</h1>
+        </Container>
     )
-    
+
 }
 export default Login;
