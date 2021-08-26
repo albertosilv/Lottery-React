@@ -4,7 +4,7 @@ import Card from '../../Components/Card'
 import Input from '../../Components/Input'
 import Lottery from '../../Components/Lottery'
 import TitlePage from '../../Components/TitlePage'
-import ButtonLInk from '../../Components/ButtonLink'
+import ButtonLink from '../../Components/ButtonLink'
 const ResetPassword:React.FC=()=>{
     function handle (element:string){
         console.log(element)
@@ -18,9 +18,9 @@ const ResetPassword:React.FC=()=>{
                 <TitlePage>Reset Password</TitlePage>
                 <Card>
                     <Input placeholder="Email" onChange={handle}/>
-                    <ButtonLInk name='Send Link' direction={true} to='/game' color='#b5c401'/>
+                    <ButtonLink name='Send Link' direction={true} to='/game' color='#b5c401' width='35'heigth='35' fontSize='2em'/>
                 </Card>
-                <ButtonLInk name='Back' direction={false} to='/' color='#707070'/>
+                <ButtonLink name='Back' direction={false} to='/' color='#707070' width='35'heigth='35' fontSize='2em'/>
             </Column>
             
         </Container>

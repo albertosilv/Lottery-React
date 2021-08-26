@@ -8,9 +8,12 @@ interface ButtonProps {
     name: string,
     direction:boolean,
     color:string,
-    to:string
+    to:string,
+    width:string,
+    heigth:string,
+    fontSize:string
 }
-const ButtonLInk: React.FC<ButtonProps> = ({ name,direction,color,to }) => {
+const ButtonLink: React.FC<ButtonProps> = ({ name,direction,color,to,width='35',heigth='35',fontSize='2em' }) => {
     const history = useHistory()
     function Click (){
         history.push(to)
@@ -18,18 +21,18 @@ const ButtonLInk: React.FC<ButtonProps> = ({ name,direction,color,to }) => {
     if(direction){
         return (
             <Container>
-                <Link onClick={e=>Click()} style={{color:`${color}`}}>{name}</Link>
-                <RightIcon color={color} width='35' height='35'/>
+                <Link onClick={e=>Click()} style={{color:`${color}`,fontSize:`${fontSize}`}}>{name}</Link>
+                <RightIcon color={color} width={width} height={heigth}/>
             </Container>
         )
     }else{
         return (
             <Container>
-                <LeftIcon color={color} width='35' height='35'/>
-                <Link onClick={e=>Click()} style={{color:`${color}`}}>{name}</Link>
+                <LeftIcon color={color} width={width} height={heigth}/>
+                <Link onClick={e=>Click()} style={{fontSize:`${fontSize}`,color:`${color}`}}>{name}</Link>
             </Container>
         )
     }
     
 }
-export default ButtonLInk;
+export default ButtonLink;
