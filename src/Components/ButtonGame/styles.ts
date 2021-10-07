@@ -4,13 +4,14 @@ interface Props {
 }
   
 export const ContainerButton = styled.button<Props>` 
-    margin: 20px 10px;
-    padding:5px 30px;
+    padding:7px 10px;
     color:#fff;
     border-radius:30px;
-    border:1px solid ${props=>props.border?props.border:'#fff'};
-    font-size:1.5em;
-    width:15%;
+    border:2px solid ${props=>props.border?props.border:'#fff'};
+    font-size:1em;
+    font-weight:500;
+    font-style: italic;
+    width:120px;
     &:active{
         border-color:${props=>props.border?'#fff':props.border};
     }

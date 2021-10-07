@@ -1,8 +1,11 @@
 import React from 'react'
 import {Card} from './styles'
-const CardContainer:React.FC=({children})=>{
+interface CardProp{
+    style?:Object,
+}
+const CardContainer:React.FC<CardProp>=({children,style})=>{
     return(
-        <Card>{children}</Card>
+        <Card style={style}>{children}</Card>
     )
 }
 export default CardContainer;

@@ -12,3 +12,8 @@ export const Column = styled.div`
     flex-direction: column;
     justify-content:center;
 `
+
+export const ErrorMessage = styled.span`
+    color:#B5C401;
+    margin:10px;
+`

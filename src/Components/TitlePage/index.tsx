@@ -1,8 +1,11 @@
 import React from 'react'
 import {Title} from './styles'
-const TitlePage:React.FC = ({children})=>{
+interface TitleProps{
+    style:Object;
+}
+const TitlePage:React.FC<TitleProps> = ({children,style})=>{
     return(
-        <Title>
+        <Title style={style}>
             {children}
         </Title>
     )

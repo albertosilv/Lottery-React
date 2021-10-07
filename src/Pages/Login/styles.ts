@@ -6,6 +6,9 @@ export const Container = styled.div`
     padding:90px;
     justify-content:space-around;
     align-items:center;
+    @media(max-width: 650px) {
+        flex-direction: column;
+    }
 ` 
 export const Column = styled.div`
     display: flex;
@@ -16,8 +19,7 @@ export const ResetContainer= styled.div`
 flex:1;
 display:flex;
 justify-content:flex-end;
-
-margin:10px;
+margin:30px;
 `
 export const Reset = styled.button`
 border:none;
@@ -25,4 +27,7 @@ outline:0;
 font-size:1em;
 background-color:transparent;
 color:#DDDDDD;
+`
+export const ErrorMessage = styled.span`
+    color:#B5C401;
 `

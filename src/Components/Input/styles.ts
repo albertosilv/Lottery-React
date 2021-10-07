@@ -18,10 +18,11 @@ export const Wrapper = styled.div`
 	& > input {
 		background: none;
 		border: none;
-		font-size: 18px;
+		font-size: 1.2em;
 		height: 100%;
 		padding-left: 10px;
 		flex: 1;
+        color:#707070;
         ::placeholder,
         ::-webkit-input-placeholder {
             color: #ABABAB;

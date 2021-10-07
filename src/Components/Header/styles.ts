@@ -10,8 +10,8 @@ export const Container = styled.div`
     align-items:center;
 `
 export const Column = styled.div`
-display:flex;
-flex-direction:row;
+    display:flex;
+    flex-direction:row;
 `
 
 export const Title = styled.div`
@@ -25,9 +25,9 @@ export const Title = styled.div`
 `
 
 export const Border = styled.div`
-    border: 4px solid #B5C401; 
+    border: 2px solid #B5C401; 
     width:100%;
-    height:1%;
+    height:5%;
     border-radius:20px;
     margin-bottom:-5px;
 `
